@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Meteo</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300;400&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="main">
+      <div class="search">
+         <input type="text" class="search__town" placeholder="Input town">
+         <button class="search__img" type="submit" src="srs/icons/search.svg"></button>
+      </div>
+      <div class="box__content">
+         <div class="box__left">
+            <div data-tabs class="box__left__tabs">
+              <div class="box__left__tabs__item">
+               <div class="box__left__tabs__one">
+                  <div class="box__left__top temperature__now">-°</div>
+                  <div class="box__left__middle"></div>
+                  <div class="box__left__bottom">
+                     <div class="box__left_bottom__town town__name town__name__now">Choose Town</div>
+                     <img src="srs/icons/Shape.svg" alt="" class="box__left_bottom__favorite">
+                  </div>
+               </div>    
+              </div>
+              <div class="box__left__tabs__item">
+               <div class="box__left__tabs__two">
+                  <div class="box__left__tabs__two__town town__tabs town__name">Choose Town</div>
+                  <div class="box__left__tabs__two__temperature temperature__details">Temperature: </div>
+                  <div class="box__left__tabs__two__feels feels__like__deatils">Feels like: 10°</div>
+                  <div class="box__left__tabs__two__weather weather__deatails">Wheather: Clouds</div>
+                  <div class="box__left__tabs__two__sunrise sunrise">Sunrise: 03:21</div>
+                  <div class="box__left__tabs__two__sunset sunset">Sunset:   18:54</div>
+               </div>
+              </div>
+              <div class="box__left__tabs__item">
+               <div class="box__left__tabs__three__town town__tabs town__name">Choose Town</div>
+                  <div class="box__left__tabs__three">
+                  
+                  <!-- <div class="box__left__tabs__three__block wheather__block">
+                     <div class="wheather__block__left">
+                        <div class="wheather__block__left__date">17 May</div>
+                        <div class="wheather__block__left__temperature">Temperature: 13°</div>
+                        <div class="wheather__block__left__feels feels">Feels like: 10°</div>
+                     </div>
+                     <div class="wheather__block__right">
+                        <div class="wheather__block__right__time">12:00</div>
+                        <div class="wheather__block__right__weather">Rain</div>
+                        <img src="srs/icons/icons8-rain-96 1.svg" alt="" class="wheather__block__right__img">
+                     </div>
+                  </div>
+                  <div class="box__left__tabs__three__block wheather__block">
+                     <div class="wheather__block__left">
+                        <div class="wheather__block__left__date">17 May</div>
+                        <div class="wheather__block__left__temperature temperature">Temperature: 13°</div>
+                        <div class="wheather__block__left__feels feels">Feels like: 10°</div>
+                     </div>
+                     <div class="wheather__block__right">
+                        <div class="wheather__block__right__time">12:00</div>
+                        <div class="wheather__block__right__weather">Rain</div>
+                        <img src="srs/icons/icons8-rain-96 1.svg" alt="" class="wheather__block__right__img">
+                     </div>
+                  </div>
+                  <div class="box__left__tabs__three__block wheather__block">
+                     <div class="wheather__block__left">
+                        <div class="wheather__block__left__date">17 May</div>
+                        <div class="wheather__block__left__temperature temperature">Temperature: 13°</div>
+                        <div class="wheather__block__left__feels feels">Feels like: 10°</div>
+                     </div>
+                     <div class="wheather__block__right">
+                        <div class="wheather__block__right__time">12:00</div>
+                        <div class="wheather__block__right__weather">Rain</div>
+                        <img src="srs/icons/icons8-rain-96 1.svg" alt="" class="wheather__block__right__img">
+                     </div>
+                  </div>
+                  <div class="box__left__tabs__three__block wheather__block">
+                     <div class="wheather__block__left">
+                        <div class="wheather__block__left__date">17 May</div>
+                        <div class="wheather__block__left__temperature temperature">Temperature: 13°</div>
+                        <div class="wheather__block__left__feels feels">Feels like: 10°</div>
+                     </div>
+                     <div class="wheather__block__right">
+                        <div class="wheather__block__right__time">12:00</div>
+                        <div class="wheather__block__right__weather">Rain</div>
+                        <img src="srs/icons/icons8-rain-96 1.svg" alt="" class="wheather__block__right__img">
+                     </div>
+                  </div> -->
+               </div>
+              </div>
+            </div>
+            <div class="box__left__options">
+               <div data-tab-now class="box__left__options__item active">Now</div>
+               <div data-tab-details class="box__left__options__item">Details</div>
+               <div data-tab-forecast class="box__left__options__item">Forecast</div>
+            </div>
+         </div>
+         <div class="box__right">
+            <div class="box__right__added">Added Locations:</div>
+            <div class="box__right__towns">
+               <!-- <div class="box__right__towns__item">
+                  <div class="box__right__towns__item__name"></div>
+                  <img src="srs/icons/remove-icon.svg" alt="" class="delete">
+               </div> -->
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <script type ='module' src="script.js"></script>
+</body>
+
+</html>
